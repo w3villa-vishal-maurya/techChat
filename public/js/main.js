@@ -22,7 +22,6 @@ socket.on('roomUsers', ({room, users})=>{
 
 // Recieve message from  the server
 socket.on("message", (user) => {
-  console.log(user);
   document.getElementById("room-name").innerText = room;
   // addUser(user.username);
   showMessage(user);
